@@ -86,7 +86,7 @@ new Docute({
         ]
       },
       {
-        title: '服务标书与岗位手册(输出)',
+        title: '投标书与岗位手册输出',
         children: [
           {
             title: '桌维驻场服务季度报告',
