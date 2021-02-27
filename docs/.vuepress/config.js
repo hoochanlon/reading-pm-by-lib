@@ -36,7 +36,7 @@ module.exports = {
         sidebar: [ 
             {
                 title: '前言',   // 必要的
-                collapsable: false, // 可选的, 默认值是 true,
+                collapsable: true, // 可选的, 默认值是 true,
                 sidebarDepth: 1,    // 可选的, 默认值是 1
                 children: [
                   ['/','getting-started']
@@ -44,18 +44,17 @@ module.exports = {
               },
               {
                 title: '通过信息走进企业',   // 必要的
-                collapsable: false, // 可选的, 默认值是 true,
                 sidebarDepth: 1,    // 可选的, 默认值是 1
                 children: [
                   ['/look/xinxi-jishu','情报学习整合'],
-                  ['/look/nengli-moxin','人才管理能力模型升维'],
-                  ['/look/ppt','答辩也是述职与自我反省的过程'],
-                  ['/look/gebumen-zhineng','各部门职能']
+                  ['/look/gebumen-zhineng','各部门职能'],
+                  ['/look/ti-analysis','培训机构分析报告'],
+                  ['/look/law-sug','解构非规范型服务企业'],
+                  ['/look/the-factory-trap','流水线工厂陷阱']
                 ]
               },   
               {
                 title: '项目成员建设管理',   // 必要的
-                collapsable: false, // 可选的, 默认值是 true,
                 sidebarDepth: 1,    // 可选的, 默认值是 1
                 children: [
                   ['/pm/member/pm-gaishu','项目概述与项目经理'],
@@ -66,7 +65,6 @@ module.exports = {
               },
               {
                 title: '项目范围与进度管理',   // 必要的
-                collapsable: false, // 可选的, 默认值是 true,
                 sidebarDepth: 1,    // 可选的, 默认值是 1
                 children: [
                   ['/pm/area_time/fanwei','​项目范围过程'],
@@ -75,7 +73,6 @@ module.exports = {
               },          
               {
                 title: '项目交付管理',   // 必要的
-                collapsable: false, // 可选的, 默认值是 true,
                 sidebarDepth: 1,    // 可选的, 默认值是 1
                 children: [
                   ['/pm/jiaofu/caigou.md','采购管理'],
@@ -88,7 +85,6 @@ module.exports = {
               },
               {
                 title: '投标书与岗位手册输出',   // 必要的
-                collapsable: false, // 可选的, 默认值是 true,
                 sidebarDepth: 1,    // 可选的, 默认值是 1
                 children: [
                   ['/bid/ji-du-bao-gao.md','桌维驻场服务季度报告'],
@@ -96,6 +92,15 @@ module.exports = {
                   ['/bid/gan-wei-man.md','甲方公司岗位工作手册'],
                   ['/bid/tou-biao-shu-ge-shi.md','​桌维项目标书编写格式'],
                   ['/bid/tou-biao-shu.md','​甲方代维项目服务（投标书）']
+                ]
+              },
+              {
+                title: '逆转的自我管理',   // 必要的
+                sidebarDepth: 1,    // 可选的, 默认值是 1
+                children: [
+                  ['/gyakuten/nengli-moxin','人才管理能力模型升维'],
+                  ['/gyakuten/tabo','台波的使用'],
+                  ['/gyakuten/ppt','答辩也是述职与自我反省的过程']
                 ]
               }
             ]
