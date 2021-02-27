@@ -29,10 +29,10 @@ module.exports = {
       editLinks: false,
       // 自定义编辑链接的文本。默认是 "Edit this page"
       editLinkText: '帮助我们改善内容',
-      // algolia: {
-      //   apiKey: 'cb720d4380fe1a8f6fc0caeaccf225dc',
-      //   indexName: 'hoochanlon_helpdesk'
-      // },
+      algolia: {
+        apiKey: 'e3a0b5346be8aa88622899b7703d9670',
+        indexName: 'reading-pm-by-lib'
+      },
         sidebar: [ 
             {
                 title: '前言',   // 必要的
