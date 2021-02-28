@@ -100,6 +100,7 @@ module.exports = {
                 children: [
                   ['/gyakuten/nengli-moxin','人才管理能力模型升维'],
                   ['/gyakuten/tabo','台波的使用'],
+                  ['/gyakuten/feiduichen','非对称风险'],
                   ['/gyakuten/ppt','答辩也是述职与自我反省的过程']
                 ]
               }
