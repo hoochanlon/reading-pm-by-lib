@@ -96,7 +96,7 @@ module.exports = {
                 ]
               },
               {
-                title: '逆转的自我管理',   // 必要的
+                title: '"逆转的自我"',   // 必要的
                 sidebarDepth: 1,    // 可选的, 默认值是 1
                 children: [
                   ['/gyakuten/nengli-moxin','人才管理能力模型升维'],
