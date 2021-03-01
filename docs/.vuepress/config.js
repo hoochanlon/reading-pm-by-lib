@@ -68,18 +68,19 @@ module.exports = {
                 sidebarDepth: 1,    // 可选的, 默认值是 1
                 children: [
                   ['/pm/area_time/fanwei','​项目范围过程'],
-                  ['/pm/area_time/time-manager','项目进度预估及管控']
+                  ['/pm/area_time/time-manager','项目进度预估及管控'],
+                  ['/pm/area_time/caigou.md','项目采购管理']
                 ]
               },          
               {
                 title: '项目交付管理',   // 必要的
                 sidebarDepth: 1,    // 可选的, 默认值是 1
                 children: [
-                  ['/pm/jiaofu/caigou.md','采购管理'],
                   ['/pm/jiaofu/cost.md','投入成本'],
                   ['/pm/jiaofu/fengxian.md','风险概论'],
                   ['/pm/jiaofu/duice.md','风险对策'],
-                  ['/pm/jiaofu/zhiliang.md','质量管理'],
+                  ['/pm/jiaofu/qc.md','质量管理'],
+                  ['/pm/jiaofu/ie.md','改善管理'],
                   ['/pm/jiaofu/shouwei.md','项目收尾管理']
                 ]
               },
