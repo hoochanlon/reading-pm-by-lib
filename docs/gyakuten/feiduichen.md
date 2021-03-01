@@ -31,4 +31,4 @@
 
 考量时间及双方多种可能满足条件的接受程度，可以作为四象限图例：
 
-![](https://bkimg.cdn.bcebos.com/pic/f703738da9773912d7d92b40f1198618367ae210?x-bce-process=image/watermark,image_d2F0ZXIvYmFpa2U4MA==,g_7,xp_5,yp_5/format,f_auto)
+![format,f_auto.png](https://i.loli.net/2021/03/01/k4LoV1d63nPbqsv.jpg)

@@ -5,13 +5,13 @@
   },
   "devDependencies": {
     "@vuepress/plugin-back-to-top": "^1.4.0",
-    "vuepress": "^1.7.1",
+    "@vuepress/plugin-google-analytics": "^1.7.1",
+    "vue-router": "^3.4.7",
+    "vuepress": "^1.8.2",
     "vuepress-plugin-authors": "^0.0.2",
     "vuepress-plugin-copyright": "^1.0.2",
-    "@vuepress/plugin-google-analytics": "^1.7.1",
     "vuepress-plugin-janitor": "^1.0.0",
     "vuepress-plugin-rss": "^2.0.0",
-    "yaml-front-matter": "^4.1.0",
-    "vue-router": "^3.4.7"
+    "yaml-front-matter": "^4.1.0"
   }
 }
