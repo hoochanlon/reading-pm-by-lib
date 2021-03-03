@@ -10,8 +10,13 @@
     "vuepress": "^1.8.2",
     "vuepress-plugin-authors": "^0.0.2",
     "vuepress-plugin-copyright": "^1.0.2",
+    "vuepress-plugin-flexsearch": "^0.1.0",
     "vuepress-plugin-janitor": "^1.0.0",
     "vuepress-plugin-rss": "^2.0.0",
     "yaml-front-matter": "^4.1.0"
+  },
+  "dependencies": {
+    "core-js": "^2.6.11",
+    "vuepress-theme-antdocs": "^1.2.2"
   }
 }

@@ -9,6 +9,13 @@ cd docs/.vuepress/dist
 # echo 'www.example.com' > CNAME
 # 脚本参考 http://wmm66.com/index/article/detail/id/62.html
 
+# vuepress core.js err 
+# yarn upgrade core-js@^2.6.11
+# https://github.com/zpfz/vuepress-theme-antdocs/issues/5
+
+# 文本搜索支持
+# https://docsearch.algolia.com/apply/
+
 git init
 git add .
 git commit -m 'deploy'

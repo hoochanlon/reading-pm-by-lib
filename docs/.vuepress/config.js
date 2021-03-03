@@ -1,13 +1,18 @@
 module.exports = {
-    title: '《解读文稿思考项目管理与流程决策》',
-    description: '項目管理',
+    title: '《阅读文稿思考项目与流程》',
+    description: '从文库资料解读项目九大领域管理与自我管理。对项目范围及进度、人才与沟通、风险评估及措施、项目质量改善与交付进行思考解读',
     base: '/reading-pm-by-lib/', //项目文件夹设置目录
+    theme: 'antdocs',
     head:[
-      ['link', {rel:'icon', href:'favicon.ico'}]
+      ['link', {rel:'icon', href:'favicon.ico'}],
+      ['link', { rel: 'stylesheet', href: '/css/style.css' }],
+      ['meta', { name: 'keywords', content: '项目管理,流程决策'}]
     ],
     plugins: [
       // https://vuepress.github.io/zh/plugins 插件下载
-      ['@vuepress/plugin-back-to-top']//安装不了插件,建议非全局安装vue      
+      ['@vuepress/plugin-back-to-top'],//安装不了插件,建议非全局安装vue    
+      ['flexsearch'], 
+      ['@vuepress/last-updated']
       // ['@vuepress/google-analytics',
       // {
       //   'ga': 'UA-157837686-3' // UA-00000000-0
@@ -22,25 +27,16 @@ module.exports = {
     ],
     themeConfig: {
       repo: 'https://github.com/hoochanlon/reading-pm-by-lib/',
+      lastUpdated: '最近一次更新', 
       nav: [
-        // { text: '跳转首页', link: '/' },
-        { text: '本作品采用by-nc4.0知识协议进行许可', link: 'http://creativecommons.org/licenses/by-nc/4.0/' },
+        { text: '跳转首页', link: '/' },
       ],
-      editLinks: false,
-      // 自定义编辑链接的文本。默认是 "Edit this page"
-      editLinkText: '帮助我们改善内容',
-      algolia: {
-        apiKey: 'e3a0b5346be8aa88622899b7703d9670',
-        indexName: 'reading-pm-by-lib'
-      },
         sidebar: [ 
             {
                 title: '前言',   // 必要的
-                collapsable: true, // 可选的, 默认值是 true,
+                collapsable: false, // 可选的, 默认值是 true,
                 sidebarDepth: 1,    // 可选的, 默认值是 1
-                children: [
-                  ['/','getting-started']
-                ]
+                link: ['/into','getting-started']
               },
               {
                 title: '通过信息了解企业资本运作职业化的人们',   // 必要的
