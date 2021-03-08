@@ -55,3 +55,5 @@
 [北森2020题库](https://wwa.lanzous.com/iKUVDlfpxgf)、[能力模型](https://wwa.lanzous.com/iJi3ulglcuf)、信息层次金字塔
 
 ![](https://i.loli.net/2021/02/10/c2TdNtF7YnP4zXm.png)
+
+![](https://i.loli.net/2021/03/07/NZ4Rf6nFGbcwhWg.png)
