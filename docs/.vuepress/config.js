@@ -51,6 +51,14 @@ module.exports = {
                   ['/look/the-factory-trap','流水线工厂陷阱'],
                   ['/process/pc/gebumen-zhineng.md','企业各部门职能初见']
                 ]
+              },
+              {
+                title: '项目招投标(前篇)',   // 必要的
+                sidebarDepth: 1,    // 可选的, 默认值是 1
+                children: [
+                  ['/bid/zhao-tou-biao-liu-chen','招投标是怎么一回事？'],
+                  ['/bid/tou-biao-shu.md','​甲方代维项目服务（投标书）']
+                ]
               },   
               {
                 title: '项目成员建设管理',   // 必要的
@@ -60,14 +68,6 @@ module.exports = {
                   ['/pm/member/pm-zhu','项目组结构及阶段发展'],
                   ['/pm/member/pm-hr','项目人才资源管理'],
                   ['/pm/member/pm-talk2','项目沟通管理']
-                ]
-              },
-              {
-                title: '项目招投标与人才培训',   // 必要的
-                sidebarDepth: 1,    // 可选的, 默认值是 1
-                children: [
-                  ['/bid/tou-biao-shu-ge-shi.md','​桌维项目标书编写格式'],
-                  ['/bid/tou-biao-shu.md','​甲方代维项目服务（投标书）']
                 ]
               },
               {
