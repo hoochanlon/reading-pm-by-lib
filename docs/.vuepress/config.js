@@ -67,7 +67,8 @@ module.exports = {
                   ['/pm/member/pm-gaishu','项目概述与项目经理'],
                   ['/pm/member/pm-zhu','项目组结构及阶段发展'],
                   ['/pm/member/pm-hr','项目人才资源管理'],
-                  ['/pm/member/pm-talk2','项目沟通管理']
+                  ['/pm/member/pm-talk2','项目沟通管理'],
+                  ['/pm/member/memlose','关于员工流失的问题']
                 ]
               },
               {
@@ -105,12 +106,19 @@ module.exports = {
                 ]
               },
               {
+                title: '实际工作所遇到的问题',   // 必要的
+                sidebarDepth: 1,    // 可选的, 默认值是 1
+                children: [
+                  ['/t-work/feiduichen','非对称风险'],
+                  ['/t-work/dui-jie-paicha','实施对接的异常排查手法']
+                ]
+              },
+              {
                 title: '由项目及流程管理到个人函数',   // 必要的
                 sidebarDepth: 1,    // 可选的, 默认值是 1
                 children: [
                   ['/gyakuten/nengli-moxin','人才管理能力模型升维'],
                   ['/gyakuten/tabo','台波的使用'],
-                  ['/gyakuten/feiduichen','非对称风险'],
                   ['/gyakuten/ppt','答辩也是述职与自我反省的过程']
                 ]
               }
