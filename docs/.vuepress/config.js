@@ -42,14 +42,15 @@ module.exports = {
                 ]
               },
               {
-                title: '通过信息了解企业资本运作职业化的人们（序章）',   // 必要的
+                title: '通过信息了解企业资本运作职业化的人们（序卷）',   // 必要的
                 sidebarDepth: 1,    // 可选的, 默认值是 1
                 children: [
                   ['/look/xinxi-jishu','情报学习整合'],
                   ['/look/ti-analysis','培训机构分析报告'],
                   ['/look/law-sug','解构非规范型服务企业'],
                   ['/look/the-factory-trap','流水线工厂陷阱'],
-                  ['/process/pc/gebumen-zhineng.md','企业各部门职能初见']
+                  ['/process/pc/gebumen-zhineng.md','企业各部门职能初见'],
+                  ['/look/cunchu','存储基础知识储备']
                 ]
               },
               {
