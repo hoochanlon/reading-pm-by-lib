@@ -46,11 +46,11 @@ module.exports = {
                 sidebarDepth: 1,    // 可选的, 默认值是 1
                 children: [
                   ['/look/xinxi-jishu','情报学习整合'],
+                  ['/look/cunchu','存储基础知识储备'],
                   ['/look/ti-analysis','培训机构分析报告'],
                   ['/look/law-sug','解构非规范型服务企业'],
                   ['/look/the-factory-trap','流水线工厂陷阱'],
-                  ['/process/pc/gebumen-zhineng.md','企业各部门职能初见'],
-                  ['/look/cunchu','存储基础知识储备']
+                  ['/process/pc/gebumen-zhineng.md','企业各部门职能专员岗位初见']
                 ]
               },
               {
@@ -94,20 +94,17 @@ module.exports = {
                 ]
               },
               {
-                title: '供应链交易市场',   // 必要的
+                title: '供应链与产品生产分工流程',   // 必要的
                 collapsable: true, // 可选的, 默认值是 true,
                 sidebarDepth: 1,    // 可选的, 默认值是 1
-                children: [['/chain/vc','供应链物流交易']]
-              },
-              {
-                title: '生产分工标准化信息流程',   // 必要的
-                sidebarDepth: 1,    // 可选的, 默认值是 1
                 children: [
-                  ['/process/pc/active','初步解读生产人员职责范围与工作活动']
+                  ['/chain/vc','供应链物流交易'],
+                  ['/chain/active','初步解读制造业者职责与活动'],
+                  ['/chain/pcba-pc','从PCBA生产流程透视工厂制造运作']
                 ]
               },
               {
-                title: '实际工作所遇到的问题',   // 必要的
+                title: '业务工作问题处理角度',   // 必要的
                 sidebarDepth: 1,    // 可选的, 默认值是 1
                 children: [
                   ['/t-work/feiduichen','非对称风险'],
@@ -120,6 +117,7 @@ module.exports = {
                 children: [
                   ['/gyakuten/nengli-moxin','人才管理能力模型升维'],
                   ['/gyakuten/tabo','台波的使用'],
+                  ['/gyakuten/piping','论批评'],
                   ['/gyakuten/ppt','答辩也是述职与自我反省的过程']
                 ]
               }

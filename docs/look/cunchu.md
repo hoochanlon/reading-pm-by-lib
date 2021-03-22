@@ -64,7 +64,7 @@ DAS/NAS/SAN比较
 
 [百度文库-磁盘阵列详解](https://wenku.baidu.com/view/83fb4ac6bb4cf7ec4afed0ce.html)
 
-![image-20210316185045566](/Users/chanlonhoo/Library/Application Support/typora-user-images/image-20210316185045566.png)
+![image-20210316185045566.png](https://i.loli.net/2021/03/22/Wskz4xlMDnTo8eL.png)
 
 ## 灾备
 
