@@ -53,8 +53,7 @@ node-version: '12.x'
 # 这一步是安装依赖，然后打包
 
 - name: Run install and build
-
-run: yarn && yarn build
+  run: yarn && yarn build
 
     - name: Simple deploy with git
       uses: rdarida/simple-github-pages-deploy-action@v1
