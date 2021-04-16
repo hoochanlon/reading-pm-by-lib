@@ -15,13 +15,11 @@ jobs:
         run:        // 这里执行 安装 打包
           npm install
           npm run build
-
-
-    - name: Simple deploy with git
-      uses: rdarida/simple-github-pages-deploy-action@v1
-      with: # optional
-        git-user: 'hoochanlon'
-        git-email: 'hoochanlon@outlook.com'
-        git-base-folder: 'docs/.vuepress/dist'
-        commit-message: 'deploy'
-        branch: 'gh-pages'
+      - name: Simple deploy with git
+        uses: rdarida/simple-github-pages-deploy-action@v1
+        with: # optional
+          git-user: 'hoochanlon'
+          git-email: 'hoochanlon@outlook.com'
+          git-base-folder: 'docs/.vuepress/dist'
+          commit-message: 'deploy'
+          branch: 'gh-pages'
