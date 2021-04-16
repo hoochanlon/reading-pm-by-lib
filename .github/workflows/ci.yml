@@ -1,23 +1,19 @@
-name: blog deploy
-
-on: 
+name: GitHub Actions Build Vuepress Demo
+on:
   push:
-    branches: 
+    branches:
       - master
-
 jobs:
-  build-deploy:
+  build-and-deploy:
     runs-on: ubuntu-latest
-    
     steps:
-    - uses: actions/checkout@v1
-    - run: apt-get install yarn
-    - run: yarn add -D vuepress
-    - run: npm run build
-    
-    - name: Deploy
-      uses: peaceiris/actions-gh-pages@v2.5.0
+    - name: Checkout
+      uses: actions/checkout@master
+
+    - name: Build and Deploy
+      uses: JamesIves/github-pages-deploy-action@master
       env:
-        ACTIONS_DEPLOY_KEY: ${{secrets.key}}
-        PUBLISH_BRANCH: gh-pages
-        PUBLISH_DIR: docs/.vuepress/dist
+        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+        BRANCH: gh-pages
+        FOLDER: docs/.vuepress/dist
+        BUILD_SCRIPT: yarn install && yarn build
