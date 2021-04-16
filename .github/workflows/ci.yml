@@ -11,9 +11,8 @@ jobs:
     
     steps:
     - uses: actions/checkout@v1
-    - run: npm install 
-    - run: npm ci
-    - run: npm install vuepress
+    - run: apt-get install yarn
+    - run: yarn add -D vuepress
     - run: npm run build
     
     - name: Deploy
