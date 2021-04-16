@@ -1,17 +1,23 @@
-name: Build and Deploy
-on: [push]
-jobs:
-  build-and-deploy:
-    runs-on: ubuntu-latest
-    steps:
-    - name: Checkout
-      uses: actions/checkout@master
+name: blog deploy
 
-    - name: vuepress-deploy
-      uses: jenkey2011/vuepress-deploy@master
+on: 
+  push:
+    branches: 
+      - master
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v1
+    - run: npm ci
+    - run: npm install vuepress
+    - run: npm run build
+    
+    - name: Deploy
+      uses: peaceiris/actions-gh-pages@v2.5.0
       env:
-        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-        TARGET_REPO: hoochanlon/reading-pm-by-lib
-        TARGET_BRANCH: gh-pages
-        BUILD_SCRIPT: yarn && yarn docs:build
-        BUILD_DIR: docs/.vuepress/dist/
+        ACTIONS_DEPLOY_KEY: ${{secrets.key}}
+        PUBLISH_BRANCH: gh-pages
+        PUBLISH_DIR: docs/.vuepress/dist
