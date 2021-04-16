@@ -1,19 +1,39 @@
-name: GitHub Actions Build Vuepress Demo
-on:
-  push:
-    branches:
-      - master
-jobs:
-  build-and-deploy:
-    runs-on: ubuntu-latest
-    steps:
-    - name: Checkout
-      uses: actions/checkout@master
+name: Automatic update
 
-    - name: Build and Deploy
-      uses: JamesIves/github-pages-deploy-action@master
-      env:
-        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-        BRANCH: gh-pages
-        FOLDER: docs/.vuepress/dist
-        BUILD_SCRIPT: yarn install && yarn build
+# on:何时触发该事件. 
+on:
+  # 在push或pull请求事件时触发工作流，但只针对主分支
+  push:
+    branches: [ master ]
+
+  # 允许从Actions选项卡手动运行此工作流
+  workflow_dispatch:
+
+# 工作流运行由一个或多个jobs组成，这些job可以按顺序或并行运行
+jobs:
+  # 此工作流包含一个名为“build-deploy”的job。
+  build-deploy:
+    # 改job运行于什么虚拟机上
+    runs-on: Ubuntu-20.04
+
+    # steps表示将作为job一部分执行的一系列任务
+    steps:
+      - uses: actions/checkout@master # 切换分支到master
+        with:
+         fetch-depth: 2 
+
+      - name: Use Node.js 12.x  #使用nodejs 12.x版本
+        uses: actions/setup-node@v1 
+        with:
+          node-version: '12.x'
+
+      - name: install and build #安装以来并打包，执行的是项目我们定义的命令
+        run: npm install && npm run build
+        
+      - name: deploy #部署
+        uses: peaceiris/actions-gh-pages@v3 #和上面一样，这里使用的是他人写好的插件库，作用是发布到其他仓库中或者其他分支上，想要具体了解可以在插件库中搜索
+        with:
+          github_token: ${{ secrets.ACCESS_TOKEN }}
+          external_repository: hoochanlon/reading-pm-by-lib #推送到该仓库中，地址格式为github名称/仓库名
+          publish_branch: gh-pages #分支名
+          publish_dir: docs/.vuepress/dist #要推送的内容（打包后的博客文件夹）
