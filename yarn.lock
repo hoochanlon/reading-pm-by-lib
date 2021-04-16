@@ -1179,13 +1179,6 @@
   dependencies:
     cross-spawn "^6.0.5"
 
-"@vuepress/plugin-medium-zoom@^1.2.0":
-  version "1.8.2"
-  resolved "https://registry.npmjs.org/@vuepress/plugin-medium-zoom/-/plugin-medium-zoom-1.8.2.tgz"
-  integrity sha512-Mljso/8E6IbNmIKmwKeC6FDfnhKY3fsOUSs5kEGzz3RQwd54eshqHAMRVwW4LZkYZHhwQXF8+qk7YqoMZB7jjg==
-  dependencies:
-    medium-zoom "^1.0.4"
-
 "@vuepress/plugin-nprogress@1.8.2", "@vuepress/plugin-nprogress@^1.7.1":
   version "1.8.2"
   resolved "https://registry.npm.taobao.org/@vuepress/plugin-nprogress/download/@vuepress/plugin-nprogress-1.8.2.tgz"
@@ -1200,7 +1193,7 @@
   dependencies:
     "@vuepress/shared-utils" "1.8.2"
 
-"@vuepress/plugin-search@1.8.2", "@vuepress/plugin-search@^1.2.0", "@vuepress/plugin-search@^1.7.1":
+"@vuepress/plugin-search@1.8.2", "@vuepress/plugin-search@^1.7.1":
   version "1.8.2"
   resolved "https://registry.npm.taobao.org/@vuepress/plugin-search/download/@vuepress/plugin-search-1.8.2.tgz?cache=0&sync_timestamp=1613666635890&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40vuepress%2Fplugin-search%2Fdownload%2F%40vuepress%2Fplugin-search-1.8.2.tgz"
   integrity sha1-dLkvZjrPa0Vg4V3ARCqExOh04gY=
@@ -1524,7 +1517,7 @@ ansi-styles@^4.1.0:
   dependencies:
     color-convert "^2.0.1"
 
-ant-design-vue@^1.4.1, ant-design-vue@^1.7.2:
+ant-design-vue@^1.7.2:
   version "1.7.4"
   resolved "https://registry.npmjs.org/ant-design-vue/-/ant-design-vue-1.7.4.tgz"
   integrity sha512-f9/4I34Yq562X70aspSFzw4BCuKRICzDvIocXpsYCC+B9+kjB8db246fpSMtV/1anqxcmGHf7Vh0XJ+ovHJKMw==
@@ -5156,11 +5149,6 @@ media-typer@0.3.0:
   resolved "https://registry.npm.taobao.org/media-typer/download/media-typer-0.3.0.tgz"
   integrity sha1-hxDXrwqmJvj/+hzgAWhUUmMlV0g=
 
-medium-zoom@^1.0.4:
-  version "1.0.6"
-  resolved "https://registry.npmjs.org/medium-zoom/-/medium-zoom-1.0.6.tgz"
-  integrity sha512-UdiUWfvz9fZMg1pzf4dcuqA0W079o0mpqbTnOz5ip4VGYX96QjmbM+OgOU/0uOzAytxC0Ny4z+VcYQnhdifimg==
-
 memory-fs@^0.4.1:
   version "0.4.1"
   resolved "https://registry.npm.taobao.org/memory-fs/download/memory-fs-0.4.1.tgz"
@@ -7351,7 +7339,7 @@ stylus-loader@^3.0.2:
     lodash.clonedeep "^4.5.0"
     when "~3.6.x"
 
-stylus@^0.54.7, stylus@^0.54.8:
+stylus@^0.54.8:
   version "0.54.8"
   resolved "https://registry.npm.taobao.org/stylus/download/stylus-0.54.8.tgz"
   integrity sha1-PaPmWWa8Vnp7BEv+DuzmU+CZ0Uc=
@@ -8029,20 +8017,9 @@ vuepress-theme-antdocs@^1.2.2:
     vuepress-plugin-smooth-scroll "^0.0.10"
     vuex "^3.1.3"
 
-vuepress-theme-onen@^1.1.3-beta:
-  version "1.1.3-beta"
-  resolved "https://registry.yarnpkg.com/vuepress-theme-onen/-/vuepress-theme-onen-1.1.3-beta.tgz#55a2fea5be31c3ac648386a1b08bbc86be74d4f1"
-  integrity sha512-uibh1E3zSu9Pv3PT9x7O/ZhsJgqxDWg52bqwKaTXhok3gf2arVRal6/Kp5QUszVggF6dIluTQLKa5iXWcMXR2A==
-  dependencies:
-    "@vuepress/plugin-medium-zoom" "^1.2.0"
-    "@vuepress/plugin-search" "^1.2.0"
-    ant-design-vue "^1.4.1"
-    stylus "^0.54.7"
-    stylus-loader "^3.0.2"
-
 vuepress@^1.8.2:
   version "1.8.2"
-  resolved "https://registry.npmjs.org/vuepress/-/vuepress-1.8.2.tgz"
+  resolved "https://registry.yarnpkg.com/vuepress/-/vuepress-1.8.2.tgz#97e8bf979630611fc7b621fc4cc35b798ee5e847"
   integrity sha512-BU1lUDwsA3ghf7a9ga4dsf0iTc++Z/l7BR1kUagHWVBHw7HNRgRDfAZBDDQXhllMILVToIxaTifpne9mSi94OA==
   dependencies:
     "@vuepress/core" "1.8.2"

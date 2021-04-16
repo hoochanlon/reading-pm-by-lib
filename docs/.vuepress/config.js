@@ -10,13 +10,13 @@ module.exports = {
     ],
     plugins: [
       // https://vuepress.github.io/zh/plugins 插件下载
-      ['@vuepress/plugin-back-to-top'],//安装不了插件,建议非全局安装vue    
-      // ['flexsearch'], 
+      ['@vuepress/plugin-back-to-top'],//安装不了插件,建议非全局安装vue
+      // ['flexsearch'],
       ['@vuepress/last-updated']
-      // ['@vuepress/google-analytics',
-      // {
-      //   'ga': 'UA-157837686-3' // UA-00000000-0
-      // }],
+      ['@vuepress/google-analytics',
+      {
+        'ga': 'UA-157837686-4' // UA-00000000-0
+      }],
       // ['copyright', {
       //   noSelect: false,
       //   authorName:{
@@ -27,11 +27,11 @@ module.exports = {
     ],
     themeConfig: {
       repo: 'https://github.com/hoochanlon/reading-pm-by-lib/',
-      lastUpdated: '最近一次更新', 
+      lastUpdated: '最近一次更新',
       nav: [
         { text: '跳转首页', link: '/' },
       ],
-        sidebar: [ 
+        sidebar: [
             {
                 title: 'getting-started',   // 必要的
                 collapsable: true, // 可选的, 默认值是 true,
@@ -60,7 +60,7 @@ module.exports = {
                   ['/bid/zhao-tou-biao-liu-chen','招投标是怎么一回事？'],
                   ['/bid/tou-biao-shu.md','​甲方代维项目服务（投标书）']
                 ]
-              },   
+              },
               {
                 title: '项目成员建设管理',   // 必要的
                 sidebarDepth: 1,    // 可选的, 默认值是 1
@@ -80,7 +80,7 @@ module.exports = {
                   ['/pm/area_time/time-manager','项目进度预估及管控'],
                   ['/pm/area_time/caigou.md','项目采购管理']
                 ]
-              },          
+              },
               {
                 title: '项目交付管理',   // 必要的
                 sidebarDepth: 1,    // 可选的, 默认值是 1
