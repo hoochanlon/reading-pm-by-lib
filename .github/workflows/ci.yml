@@ -12,9 +12,7 @@ jobs:
         with:
           persist-credentials: false
       - name: install and build
-        run:        // 这里执行 安装 打包
-          npm install
-          npm run build
+        run:  npm install && npm run build
       - name: Simple deploy with git
         uses: rdarida/simple-github-pages-deploy-action@v1
         with: # optional
