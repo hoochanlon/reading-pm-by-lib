@@ -11,6 +11,7 @@ jobs:
     
     steps:
     - uses: actions/checkout@v1
+    - run: npm install 
     - run: npm ci
     - run: npm install vuepress
     - run: npm run build
