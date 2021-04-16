@@ -14,4 +14,4 @@ jobs:
         TARGET_REPO: hoochanlon/reading-pm-by-lib
         TARGET_BRANCH: master
         BUILD_SCRIPT: yarn && yarn docs:build
-        BUILD_DIR: blog/.vuepress/dist/
+        BUILD_DIR: docs/.vuepress/dist/
