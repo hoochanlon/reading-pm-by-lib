@@ -1,31 +1,31 @@
-name: github pages
+name: Deploy GitHub Pages
 
+# 触发条件：在 push 到 master 分支后
 on:
   push:
     branches:
-    - master
+      - master
 
+# 任务
 jobs:
-  build-deploy:
+  build-and-deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v2 # If you're using actions/checkout@v2 - must set persist-credentials to false in most cases for the deployment to work correctly.
+        uses: actions/checkout@v2
         with:
           persist-credentials: false
-      
-      - name: Checkout
-        uses: actions/checkout@master
-      - name: Install and Build
-        run: |
-          yarn install
-          yarn docs:build
 
-    #发布到mybells.github.io/master
-    - name: Deploy mybells.github.io/master
-      uses: peaceiris/actions-gh-pages@v2
-      env:
-        ACTIONS_DEPLOY_KEY: ${{ secrets.ACTIONS_DEPLOY_KEY }}
-        EXTERNAL_REPOSITORY: hoochanlon/reading-pm-by-lib #可以新建一个mybells.github.io仓库发布到master
-        PUBLISH_BRANCH: gh-pages
-        PUBLISH_DIR: docs/.vuepress/dist
+      - name: install
+        run: yarn install 
+
+      - name: Build
+        run:  yarn docs:build
+
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@releases/v3
+        with:
+          ACTIONS_DEPLOY_KEY: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+          REPOSITORY_NAME: hoochanlon/reading-pm-by-lib
+          BRANCH: gh-pages
+          FOLDER: dist
