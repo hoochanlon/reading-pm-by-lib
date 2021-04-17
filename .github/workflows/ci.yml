@@ -9,10 +9,11 @@ jobs:
   build-deploy:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v1
-    - run: npm install
-    - run: npm ci
-    - run: npm run build
+    - uses: egordm/gha-yarn-node-cache@v1
+    - name: Install JS dependencies
+      run: yarn install
+    - name: yarn build
+      run: yarn docs:build
 
     #发布到mybells.github.io/master
     - name: Deploy mybells.github.io/master
